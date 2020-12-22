@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E0BC"
+    tools:context=".HabitActivity">
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textViewAlert"-->
+    <!--        android:layout_width="2dp"-->
+    <!--        android:layout_height="18dp"-->
+    <!--        android:text=""-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.468"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.816" />-->
+
+    <ListView
+        android:id="@+id/myListViewx"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thu"
+        app:layout_constraintVertical_bias="0.0">
+
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:text="Welcome"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/myListViewx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSkill"
+        android:layout_width="83dp"
+        android:layout_height="53dp"
+        android:onClick="toSkill"
+        android:text="Skill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myListViewx"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonStat"
+        android:layout_width="79dp"
+        android:layout_height="50dp"
+        android:onClick="toStat"
+        android:text="Stat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonTodo"
+        app:layout_constraintTop_toBottomOf="@+id/myListViewx"
+        app:layout_constraintVertical_bias="0.998" />
+
+    <Button
+        android:id="@+id/buttonTodo"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:onClick="toHabit"
+        android:text="Habit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonProject"
+        app:layout_constraintTop_toBottomOf="@+id/myListViewx"
+        app:layout_constraintVertical_bias="0.998" />
+
+    <Button
+        android:id="@+id/buttonProject"
+        android:layout_width="86dp"
+        android:layout_height="51dp"
+        android:onClick="toProject"
+        android:text="Project"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonSetting"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonSetting"
+        android:layout_width="82dp"
+        android:layout_height="52dp"
+        android:onClick="toSetting"
+        android:text="Setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonSkill"
+        app:layout_constraintTop_toBottomOf="@+id/myListViewx"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

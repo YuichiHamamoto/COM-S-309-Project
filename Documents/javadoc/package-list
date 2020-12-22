@@ -1,0 +1,5 @@
+com.example.habit_tracker
+com.example.habit_tracker.Logic
+com.example.habit_tracker.Logic.HabitLogic
+com.example.habit_tracker.Logic.SkillsLogic
+com.example.habit_tracker.Network

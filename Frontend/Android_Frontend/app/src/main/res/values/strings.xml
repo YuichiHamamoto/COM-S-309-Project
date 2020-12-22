@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Habit_Tracker</string>
+
+    <string-array name="freq_dropdown">
+        <item>Never</item>
+        <item>Every day</item>
+        <item>Every Week</item>
+
+    </string-array>
+
+
+
+</resources>
