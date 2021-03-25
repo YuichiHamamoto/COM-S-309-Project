@@ -29,8 +29,7 @@ public class ExampleSocket {
 
     /**
      * This method is called when the connection between the server and client is
-     * established. The "session" object is the representation of the client. There
-     * are various methods you can call on it. In this particular example, we are
+     * established. The "session" object is the representation of the client. We are
      * going to be sending a string saying "Connected" to inform the client that the
      * connection was established successfully.
      *
@@ -47,21 +46,15 @@ public class ExampleSocket {
     }
 
     /**
-     * This method is called when the server receives a message from the client. Use
-     * this method to handle what the server should do when the client sends you
+     * This method is called when the server receives a request from the client. Use
+     * this method to send the version of the app to client
      * messages.
-     *
-     *
      * @param session  the representation of the client
      * @param messsage Message sent by the client
      */
     @OnMessage
     public void onMessage(Session session, String messsage) {
-        // In this method, we are using the helper method provided below
-        // You can also do what we did in the onOpen method.
-
-        // This sends a message back to the client which sent the server a message
-        // indicating that the server received the message.
+        //Here send a hard coded value
         logger.info("Message Received: " + messsage);
         sendMessage(session, "version: 1.0.2");
     }

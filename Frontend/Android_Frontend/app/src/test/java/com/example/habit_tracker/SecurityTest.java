@@ -12,6 +12,9 @@ import org.mockito.junit.MockitoRule;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+/*
+Yuichi Hamamoto
+ */
 public class SecurityTest {
     @Rule public MockitoRule mockitoRule = MockitoJUnit.rule();
 

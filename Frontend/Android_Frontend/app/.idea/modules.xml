@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1475318774/Android_Frontend.Habit_Tracker.iml" filepath="$PROJECT_DIR$/.idea/modules/-1475318774/Android_Frontend.Habit_Tracker.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-119565786/Habit_Tracker.iml" filepath="$PROJECT_DIR$/.idea/modules/-119565786/Habit_Tracker.iml" group="Habit_Tracker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Habit_Tracker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/Habit_Tracker.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="Habit_Tracker/app" />
     </modules>
   </component>

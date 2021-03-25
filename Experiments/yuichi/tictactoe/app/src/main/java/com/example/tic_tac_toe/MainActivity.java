@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean isO;
 
-    TextView but1,but2,but3,but4,but5,but6,but7,but8,but9;
+    TextView but1,but2,but3,but4,but5,but6,but7,but8,but9,reset;
     TextView winner;
 
     public int worl; //0 is game keep going, 1 is o win, 2 is x win
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         but7 = findViewById(R.id.b7);
         but8 = findViewById(R.id.b8);
         but9 = findViewById(R.id.b9);
+        reset = findViewById(R.id.buttonReset);
         winner = findViewById(R.id.textView);
 
     }
@@ -63,6 +64,28 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void reset(View view){
+        but1.setText("");
+        but2.setText("");
+        but3.setText("");
+        but4.setText("");
+        but5.setText("");
+        but6.setText("");
+        but7.setText("");
+        but8.setText("");
+        but9.setText("");
+        winner.setText("O vs X");
+        worl = 0;
+        col1o = col2o = col3o = 0;
+        row1o = row2o = row3o = 0;
+        dia1o = dia2o = 0;
+        col1x = col2x = col3x = 0;
+        row1x = row2x = row3x = 0;
+        dia1x = dia2x = 0;
+        bo1 = bo2 = bo3 = bo4 = bo5 = bo6 = bo7 = bo8 = bo9 = 0;
+        isO = true;
+
+    }
 
     public void b1(View view){
         if(bo1 != 1&&worl==0){
